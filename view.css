@@ -1,0 +1,112 @@
+:root {
+  --bg: #f0f4ff;
+  --card: rgba(255, 255, 255, 0.75);
+  --border: rgba(0,0,40,0.15);
+  --text: #0a0a2a;
+  --text-soft: #444a70;
+
+  --green: #22c55e;
+  --green-soft: rgba(34, 197, 94, 0.15);
+
+  --red: #ef4444;
+  --red-soft: rgba(248, 113, 113, 0.15);
+
+  --pill-bg: rgba(37, 99, 235, 0.15);
+  --pill-border: rgba(37, 99, 235, 0.4);
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #ffffff, #dce6ff);
+  font-family: system-ui;
+  color: var(--text);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 900px;
+  background: var(--card);
+  backdrop-filter: blur(12px);
+  padding: 26px;
+  border-radius: 26px;
+  border: 1px solid var(--border);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 26px;
+  background: linear-gradient(45deg, #3a0ca3, #4361ee);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 18px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+
+.good {
+  background: var(--green-soft);
+  border: 1px solid var(--green);
+  color: var(--green);
+}
+
+.bad {
+  background: var(--red-soft);
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+
+.section {
+  background: rgba(255,255,255,0.65);
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.row-label {
+  font-size: 11px;
+  color: var(--text-soft);
+}
+
+.row-value {
+  font-size: 14px;
+  margin: 4px 0 10px;
+  word-break: break-all;
+}
+
+.attr-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pill {
+  padding: 4px 8px;
+  border-radius: 10px;
+  background: var(--pill-bg);
+  border: 1px solid var(--pill-border);
+  font-size: 11px;
+  color: #1e40af;
+}
+
+.preview {
+  max-width: 100%;
+  border-radius: 14px;
+  margin-top: 10px;
+  border: 1px solid var(--border);
+}
